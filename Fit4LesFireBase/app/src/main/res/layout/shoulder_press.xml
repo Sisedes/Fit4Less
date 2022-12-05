@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="343dp"
+        android:layout_height="248dp"
+        android:layout_marginBottom="40dp"
+        android:background="#EF7853"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/shoulder_press_example" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="363dp"
+        android:layout_height="294dp"
+        android:background="#F3A892"
+        android:text="The crunch is a classic core exercise. It specifically trains your abdominal muscles, which are part of your core.  Your core consists not only of your abs. It also includes your oblique muscles on the sides of your trunk, as well as the muscles in your pelvis, lower back, and hips. Together, these muscles help stabilize your body.  While the crunch is a popular core move, it isn’t safe for everyone. It can place a lot of stress on your back and neck, and it only works your abs, not the other muscles in your core.  In this article, we’ll look at the pros and cons of doing crunches, and how to do the exercise with good form"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Shoulder Press"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".worksouts.Legs">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/squad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/squad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/leg_extention"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellLunges"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/leg_extention"
+        tools:srcCompat="@drawable/leg_extention" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="236dp"
+        android:background="#EF7853"
+        android:src="@drawable/dumbbell_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellLunges"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dumbbell_side"
+        tools:srcCompat="@drawable/dumbbell_side" />
+
+    <Button
+        android:id="@+id/squad"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Squat"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EF7853"
+        android:src="@drawable/leg_press"
+        app:layout_constraintEnd_toStartOf="@+id/legPress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/leg_press"
+        tools:srcCompat="@drawable/leg_press" />
+
+    <Button
+        android:id="@+id/legExtentions"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#EF7853"
+        android:text="Leg Extensions"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/legPress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/squad" />
+
+    <Button
+        android:id="@+id/legPress"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Leg Press"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/legExtentions" />
+
+    <Button
+        android:id="@+id/dumbbellLunges"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Dumbbell Lunges"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/legPress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".worksouts.Abs">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/sit_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sitUps"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/crunching"
+        app:layout_constraintEnd_toStartOf="@+id/crunches"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/crunching"
+        tools:srcCompat="@drawable/crunching" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="236dp"
+        android:background="#EF7853"
+        android:src="@drawable/dumbbell_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellSide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dumbbell_side"
+        tools:srcCompat="@drawable/dumbbell_side" />
+
+    <Button
+        android:id="@+id/sitUps"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Sit-Ups"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EF7853"
+        android:src="@drawable/hip_twist"
+        app:layout_constraintEnd_toStartOf="@+id/twistingHip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/hip_twist"
+        tools:srcCompat="@drawable/hip_twist" />
+
+    <Button
+        android:id="@+id/crunches"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Crunches"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/twistingHip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/sitUps" />
+
+    <Button
+        android:id="@+id/twistingHip"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Twisting Hip Raise"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/crunches" />
+
+    <Button
+        android:id="@+id/dumbbellSide"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Dumbbell Side Bends"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/twistingHip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

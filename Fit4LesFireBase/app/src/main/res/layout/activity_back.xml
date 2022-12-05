@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".worksouts.Back">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/deadlift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deadlift"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/lat_pulldown"
+        app:layout_constraintEnd_toStartOf="@+id/latPull"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/lat_pulldown"
+        tools:srcCompat="@drawable/lat_pulldown" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="236dp"
+        android:background="#EF7853"
+        android:src="@drawable/one_arm_dumbbell"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/oneArm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/one_arm_dumbbell"
+        tools:srcCompat="@drawable/one_arm_dumbbell" />
+
+    <Button
+        android:id="@+id/deadlift"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Deadlift"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EF7853"
+        android:src="@drawable/chin_up_bar"
+        app:layout_constraintEnd_toStartOf="@+id/chin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/chin_up_bar"
+        tools:srcCompat="@drawable/chin_up_bar" />
+
+    <Button
+        android:id="@+id/latPull"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#EF7853"
+        android:text="Lateral Pull Down"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/deadlift" />
+
+    <Button
+        android:id="@+id/chin"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Chin-Ups"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/latPull" />
+
+    <Button
+        android:id="@+id/oneArm"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="One-Arm Dumbbell Rows"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/chin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

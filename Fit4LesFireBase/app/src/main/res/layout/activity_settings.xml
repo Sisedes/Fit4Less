@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    android:backgroundTint="#F3C7BB"
+    tools:context=".Settings">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="363dp"
+        android:layout_height="445dp"
+        android:background="#F3C7BB"
+        android:backgroundTint="#F3C7BB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Change Mail"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <EditText
+                android:id="@+id/oldMail"
+                android:layout_width="226dp"
+                android:layout_height="58dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Current E-mail"
+                android:drawableStart="@drawable/ic_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/newMail"
+                android:layout_width="226dp"
+                android:layout_height="58dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="New E-mail"
+                android:drawableStart="@drawable/ic_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/currentMailPass"
+                android:layout_width="225dp"
+                android:layout_height="62dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Current Password"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/changeMail"
+                android:layout_width="161dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#EF7853"
+                android:text="Change Mail" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="74dp" />
+
+            <EditText
+                android:id="@+id/newPassword"
+                android:layout_width="226dp"
+                android:layout_height="58dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="New Password"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/newPasswordAgain"
+                android:layout_width="226dp"
+                android:layout_height="58dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="New Password(Again)"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/oldPassword"
+                android:layout_width="226dp"
+                android:layout_height="58dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Current Password"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/changePassword"
+                android:layout_width="161dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#EF7853"
+                android:text="Change Password" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="353dp"
+                android:layout_height="37dp" />
+
+            <Button
+                android:id="@+id/delAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8E1C1C"
+                android:text="Delete Account" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/panel"
+        android:layout_width="189dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#6CAF32"
+        android:text="Panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

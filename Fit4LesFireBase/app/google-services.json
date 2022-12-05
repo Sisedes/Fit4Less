@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471634328515",
+    "project_id": "fit4less-da917",
+    "storage_bucket": "fit4less-da917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471634328515:android:42559be6f0ee62edcf5b76",
+        "android_client_info": {
+          "package_name": "com.example.fit4lesfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471634328515-9pp1ko51v0bgjd0hatcaqt23lsp3p27g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKqRtX-HQFEiubpJ-sPpqPyY2u9el2emQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471634328515-9pp1ko51v0bgjd0hatcaqt23lsp3p27g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

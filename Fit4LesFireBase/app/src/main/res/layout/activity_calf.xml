@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".worksouts.Calf">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/barbell_calf_raise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barbellCalfRaise"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/toe_raises"
+        app:layout_constraintEnd_toStartOf="@+id/toeRaise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/toe_raises"
+        tools:srcCompat="@drawable/toe_raises" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="236dp"
+        android:background="#EF7853"
+        android:src="@drawable/dumbbell_calf_jump"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calfJump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dumbbell_calf_jump"
+        tools:srcCompat="@drawable/dumbbell_calf_jump" />
+
+    <Button
+        android:id="@+id/barbellCalfRaise"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Barbell Calf Raise"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EF7853"
+        android:src="@drawable/toe_raises"
+        app:layout_constraintEnd_toStartOf="@+id/oneLegRaise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/toe_raises"
+        tools:srcCompat="@drawable/toe_raises" />
+
+    <Button
+        android:id="@+id/toeRaise"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#EF7853"
+        android:text="Toe Raises"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/oneLegRaise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/barbellCalfRaise" />
+
+    <Button
+        android:id="@+id/oneLegRaise"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="One-Leg Toe Raises"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/toeRaise" />
+
+    <Button
+        android:id="@+id/calfJump"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Dumbbell Calf Jump"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/oneLegRaise" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

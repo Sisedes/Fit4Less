@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".worksouts.Chest">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/bench_press"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/benchPress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:background="#EF7853"
+        android:src="@drawable/push_up"
+        app:layout_constraintEnd_toStartOf="@+id/pushUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/push_up"
+        tools:srcCompat="@drawable/push_up" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="236dp"
+        android:background="#EF7853"
+        android:src="@drawable/push_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inclininePushUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/push_up"
+        tools:srcCompat="@drawable/push_up" />
+
+    <Button
+        android:id="@+id/benchPress"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Bench Press"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EF7853"
+        android:src="@drawable/incline_bench"
+        app:layout_constraintEnd_toStartOf="@+id/inclinePress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/incline_bench"
+        tools:srcCompat="@drawable/incline_bench" />
+
+    <Button
+        android:id="@+id/pushUp"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#EF7853"
+        android:text="Push-Ups"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/inclinePress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/benchPress" />
+
+    <Button
+        android:id="@+id/inclinePress"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Incline Press"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/pushUp" />
+
+    <Button
+        android:id="@+id/inclininePushUp"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#EF7853"
+        android:text="Incline Push-Ups"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/inclinePress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C7BB"
+    tools:context=".WaterReminder">
+
+    <Button
+        android:id="@+id/bt30min"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#EF7853"
+        android:text="Remind in 30 Minutes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF7853"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/btnOneHour"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="#EF7853"
+        android:text="Remind in an Hour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn2Hour"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#EF7853"
+        android:text="Remind in Two Hours"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="905dp"
+        android:layout_height="412dp"
+        android:background="#F3C7BB"
+        app:layout_constraintBottom_toTopOf="@+id/bt30min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947"
+        app:srcCompat="@drawable/water" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
