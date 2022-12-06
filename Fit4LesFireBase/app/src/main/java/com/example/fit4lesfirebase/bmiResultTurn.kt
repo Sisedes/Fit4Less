@@ -9,7 +9,7 @@ open class bmiResultTurner {
         else if(18.5<=a&& a<25){
             A= "Your Weight is Normal";
         }
-        else if(a<=25&&a<30){
+        else if(a>=25&&a<30){
             A="Your Overweight"
         }
         else if(a>30){
